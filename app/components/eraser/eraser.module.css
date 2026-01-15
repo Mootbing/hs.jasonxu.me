@@ -1,0 +1,23 @@
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.eraser {
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  width: 200vw;
+  height: 200vh;
+  z-index: 100;
+}
+
+.squiggle {
+  stroke-dasharray: 15000;
+  transition: 0.15s ease-out;
+  /* stroke-dashoffset: 10000; */
+  /* animation: draw 2.5s linear forwards; */
+}

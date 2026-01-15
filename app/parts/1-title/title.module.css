@@ -1,0 +1,241 @@
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.scrollContainer {
+  width: 100vw;
+  height: 150vh;
+  position: relative;
+}
+
+.primalContainer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.backgroundText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 300px */
+  letter-spacing: 45px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  gap: 25px;
+}
+
+.titleImageSubContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jasonImage {
+  animation: slideInFromTop 1s ease-in-out 0s 1;
+  margin-bottom: -50px;
+}
+
+.nameTitle {
+
+  animation: slideInFromTop 1s ease-in-out 0s 1;
+
+  color: #FFF;
+  text-align: center;
+  font-family: Lexend;
+  /* font-size: 75px; */
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+}
+
+
+
+.nameSubtitle {
+  animation: slideInFromBottom 1s ease-in-out 0s 1;
+
+  color: rgba(255, 255, 255, 0.25);
+  text-align: center;
+  font-family: Lexend;
+  /* font-size: 20px; */
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: 3.75px;
+  text-transform: uppercase;
+  max-width: 450px;
+  
+  margin-top: 10px;
+}
+
+.creditText {
+  animation: slideInFromBottom 1s ease-in-out 0s 1;
+  color: #303030;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.highlight {
+  background: linear-gradient(133deg, #8AA4FF 0%, #FF9DFB 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.scrollImageContainer {
+
+  animation: 1s ease-in-out 0s 1 slideInFromBottom;
+
+  position: absolute;
+  bottom: 5%;
+}
+
+.leftSideBar {
+  animation: 1s ease-in-out slideInFromLeft;
+
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  /* background-color: red; */
+}
+
+.rightSideBarText {
+
+  /* animation: 1s ease-in-out 0s 1 slideInFromRight; 
+    todo
+    */
+
+  position: absolute;
+
+  width: 100vh;
+
+  transform: rotate(90deg) translate(0, -100%);
+  transform-origin: 100% 0;
+
+  right: 50px;
+
+  color: #3B3B3B;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1.8px;
+}
+
+/* birthday counter stuff */
+
+.birthdayCountDownContainer {
+
+  animation: slideInFromTop 1s ease-in-out 0s 1;
+
+  position: absolute;
+  top: 5%;
+
+  display: flex;
+  width: 100vw;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.birthdayTransitionContainer {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.birthdayCakeImage {
+  width: 30px;
+  height: 30px;
+}
+
+.birthdayTransitionArrow {
+  width: 24px;
+  height: 19px;
+}
+
+.birthdayCountDownContainer > p, .birthdayTransitionContainer > p {
+  color: #3B3B3B;
+  font-family: Lexend;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

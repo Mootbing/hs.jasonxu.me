@@ -1,0 +1,82 @@
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideUp {
+  animation: 1s ease-out slideInFromBottom;
+}
+
+.scrollContainer {
+  width: 100vw;
+  height: 150vh;
+  position: relative;
+}
+
+.primalContainer {
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  position: fixed;
+}
+
+.groupContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.textContainer {
+  width: 60vw;
+  max-width: 400px;
+}
+
+.disclaimerText {
+  color: #FFF;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 50px;
+  letter-spacing: 3.75px;
+}
+  
+.timeSaverText {
+  color: #aeaeae;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: 25px;
+  letter-spacing: 2.25px;
+
+}
+
+.recommenderText {
+  color: white;
+  font-family: Lexend;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: 25px;
+  letter-spacing: 2.25px;
+}
+
+.navWrapper {
+  animation: 1s ease-out slideInFromBottom;
+
+  width: 70vw;
+  margin-top: 50px;
+}

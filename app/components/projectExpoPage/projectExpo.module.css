@@ -1,0 +1,126 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+.main {
+    background-color: #000;
+    width: 100vw;
+    /* overflow: show; */
+}
+
+.headingContainer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 600px;
+    z-index: 1;
+}
+
+.hero {
+    /* position: absolute;
+    top: 0; */
+
+    position: relative;
+    z-index: 200;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+/*     
+    background-color: black; */
+}
+
+
+.tag {
+    text-transform: uppercase;
+    
+    color: #ABABAB;
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5.4px;
+}
+
+.heading {
+    text-transform: uppercase;
+
+    color: #FFF;
+    font-family: Lexend;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-top: 20px;
+
+    word-break: break-word;
+}
+
+.description {
+    color: #ABABAB;
+    text-align: justify;
+    font-family: Lexend;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 162.183%; /* 38.924px */
+
+    margin-top: 20px;
+}
+
+.backgroundGem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    /* width: "100vw";
+    overflow: hidden; */
+
+    opacity: 50%;
+
+    transform: translate(-50%, -50%) scale(1%);
+}
+
+.scrollImageContainer {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+
+    z-index: 100;
+
+    transform: translateX(-50%);
+}
+
+.leftSideBar {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.projectContainer {
+
+    gap: 100px;
+
+    width: 100%;
+
+    padding-left: 25px;
+    padding-right: 25px;
+
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 900px;
+
+    padding-bottom: 100px;
+}

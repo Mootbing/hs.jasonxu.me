@@ -1,0 +1,72 @@
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100vh);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fullPageContainer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-image: url("https://media.discordapp.net/attachments/663150753946402820/1133883107821490247/Desktop_-_34.png");
+  /* todo fix */
+  background-size: auto 50px;
+  background-position: center;
+  background-repeat: repeat;
+
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+.textContainer {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  /* z-index: 50; */
+
+  animation: 2s ease-in-out slideInFromBottom;
+}
+
+.loadingText {
+  color: #FFF;
+  font-family: Lexend;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 100px;
+  z-index: 100;
+
+  animation: 0.25s ease-out 2s fadeOut 1;
+  animation-fill-mode: forwards;
+}

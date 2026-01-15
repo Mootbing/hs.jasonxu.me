@@ -1,0 +1,18 @@
+.scrollContainer {
+    width: 100vw;
+    height: 300vh;
+    position: relative;
+}
+  
+.primalContainer {
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    position: fixed;
+
+    z-index: 100;
+}
+
+.toFlip {
+    /* transform: rotate(0deg); */
+}

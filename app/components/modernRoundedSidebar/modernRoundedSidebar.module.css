@@ -1,0 +1,97 @@
+
+.centeringContainer {
+  position: fixed;
+  top: 50%;
+
+  z-index: 10000;
+}
+
+.navbarContainer {
+  padding: 10px;
+
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(50px);
+
+  transition: all 0.25s ease-in-out;
+
+  /* width: 55px; */
+  /* height: 430px; */
+}
+
+.flexContainer {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.sectionTitle {
+  color: #FFF;
+  font-family: Lexend;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  
+  text-transform: uppercase;
+
+  transition: 0.125 ease-in-out;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.sectionLinksContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.linkChipContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.linkText {
+  color: #FFF;
+  font-family: Lexend;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+
+  white-space: nowrap;
+
+  text-transform: uppercase;
+  
+  transition: 0.25s ease-in-out;
+}
+
+.linkIcon {
+  width: 35px;
+  height: 35px;
+}
+
+.mobileToggleContainer {
+  position: absolute;
+  z-index: 10000;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mobileToggle {
+  width: 50px;
+  height: 50px;
+}

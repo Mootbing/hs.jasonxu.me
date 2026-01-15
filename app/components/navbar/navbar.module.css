@@ -1,0 +1,42 @@
+.navbarContainer {
+
+  display: flex;
+  width: 100%;
+  padding: 10px 0px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.navbarItemContainer :nth-child(1)
+{
+  animation: none;
+}
+
+.navbarItemContainer :nth-child(2)
+{
+  animation-delay: 2s;
+}
+
+.navbarItemContainer :nth-child(3)
+{
+  animation-delay: 3s;
+}
+
+.navbarItemContainer {
+  width: 100%;
+}
+  
+.navbarText {
+  color: #AEAEAE;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  word-spacing:9999px; /* bootleg spacing new line shit */
+}

@@ -1,0 +1,31 @@
+.scrollContainer {
+    width: 100vw;
+    height: 400vh;
+    position: relative;
+}
+  
+.primalContainer {
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    position: fixed;
+
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconContainer {
+    position: relative;
+    width: 400px;
+    height: 420px;
+
+    z-index: 100;
+}
+
+.constellation {
+    position: absolute;
+}

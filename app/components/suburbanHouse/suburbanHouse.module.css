@@ -1,0 +1,25 @@
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.squiggle {
+  stroke-dasharray: 2000;
+  /* transition: 0.15s ease-out; */
+
+  /* stroke-dashoffset: 2000;  
+  animation: draw 1s ease-out forwards; */
+}

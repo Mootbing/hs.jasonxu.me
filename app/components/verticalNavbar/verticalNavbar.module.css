@@ -1,0 +1,31 @@
+
+.navbarContainer {
+  display: flex;
+  height: 100%;
+  width: 225px;
+  /* for now above is bfi solutoin but later come back */
+
+  padding: 0px 10px;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.navbarItemContainer {
+  height: 100%;
+  transform: rotate(-90deg);
+}
+  
+.navbarText {
+  color: #3B3B3B;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  word-spacing:9999px; /* bootleg spacing new line shit */
+}

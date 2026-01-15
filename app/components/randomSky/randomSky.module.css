@@ -1,0 +1,59 @@
+@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(1000%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.masterContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.skyContainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.star {
+
+    animation: 1s ease-in-out slideInFromBottom;
+
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+
+    /* transition: all 0.25s */
+}
+
+.dimTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+
+    z-index: 100;
+}
+
+.dimBottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+
+    z-index: 100;
+}

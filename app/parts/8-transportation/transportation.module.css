@@ -1,0 +1,32 @@
+.scrollContainer {
+    width: 100vw;
+    height: 300vh;
+    position: relative;
+}
+  
+.primalContainer {
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    position: fixed;
+
+    z-index: 100;
+}
+
+.train {
+    position: absolute;
+    z-index: 100;
+
+    top: 55%;
+    right: 5%;
+
+    transform: translate(0, -50%);
+}
+
+.plane {
+    position: absolute;
+    z-index: 100;
+
+    top: 5%;
+    right: 5%;
+}

@@ -1,0 +1,94 @@
+.scrollContainer {
+  width: 100vw;
+  height: 200vh;
+  position: relative;
+}
+
+.primalContainer {
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  position: fixed;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.aboveStarsContainer {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 400px;
+
+  gap: 25px;
+}
+
+.interest {
+  margin-top: -50px;
+
+  color: #AEAEAE;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 3.75px;
+}
+
+.email {
+  color: #fff;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 15px */
+  letter-spacing: 2.25px;
+}
+
+/* .email :hover {
+  color: #FFF;
+  transition: 0.15s ease-in-out;
+} */
+
+.copy {
+  
+  /* margin-top: 30px; */
+
+  color: #AEAEAE;
+  font-family: Lexend;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 2.25px;
+}
+
+.navContainer {
+  bottom: 0px;
+  margin-bottom: 25px;
+  max-width: 700px;
+}

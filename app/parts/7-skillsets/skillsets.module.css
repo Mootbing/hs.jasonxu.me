@@ -1,0 +1,57 @@
+.scrollContainer {
+    width: 100vw;
+    height: 200vh;
+    position: relative;
+}
+  
+.primalContainer {
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    position: fixed;
+
+    z-index: 100;
+}
+
+.tianjinContainer{
+
+    position: absolute;
+
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    transform: rotate(6deg) scale(0.25);
+}
+
+.aboveStarsContainer {
+    position: absolute;
+    top: 0;
+
+    z-index: 100;
+}
+
+.iconContainer {
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.paintIcon { 
+    /* transform: rotate(9deg); */
+    position: absolute;
+}
+
+.wordIcon {
+    /* transform: rotate(-16deg); */
+    position: absolute;
+}
+
+.ipad {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+}

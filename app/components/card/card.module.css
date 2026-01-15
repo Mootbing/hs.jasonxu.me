@@ -1,0 +1,151 @@
+.cardContainer {
+    position: relative;
+
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    background: linear-gradient(235deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+    /* box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.25); */
+    backdrop-filter: blur(12.5px);
+    /* border: 1px solid white; */
+    border: 1px solid #202020;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.hoverAnimation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+
+    width: 100%;
+    height: 100%;
+    
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    background: linear-gradient(235deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.07) 100%);
+}
+
+.company {
+    color: #3B3B3B;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 1.8px;
+
+    text-transform: uppercase;
+
+    /* background: red; */
+    
+    /* rotate: -90deg; */
+}
+
+.companyContainer {
+    position: absolute;
+
+    top: 50%;
+    bottom: 50%;
+
+    left: 40px;
+
+    transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.titleContainer {
+    margin-left: 100px;
+    height: 100%;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* background: #000; */
+}
+
+.technologiesContainer {
+
+    margin-top: 20px;
+
+    gap: 20px;
+
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+}
+
+.title {
+    color: #FFF;
+    text-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.50);
+    font-family: Lexend;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 4.5px;
+
+    text-transform: uppercase;
+
+    margin-top: 20px;
+    
+    word-break: break-word;
+}
+
+.description {
+    color: #FFF;
+    text-align: justify;
+    text-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.50);
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 175%; /* 17.5px */
+    letter-spacing: 0.5px;
+
+    /* text-transform: capitalize; */
+    
+    margin-top: 20px;
+}
+
+
+/* tech */
+.techName {
+    color: #3B3B3B;
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 175%; /* 10.5px */
+    letter-spacing: 0.3px;
+
+    text-transform: uppercase;
+}
+
+.techBubble {
+    border-radius: 100px;
+    /* background: rgba(255, 255, 255, 0.15); */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(2px);
+
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.image {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    z-index: -1;
+
+    transform: scale(0.5) translate(50%, 50%);
+}

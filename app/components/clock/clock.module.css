@@ -1,0 +1,88 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateFaster {
+  0% {
+    transform: rotate(-140deg);
+  }
+  100% {
+    transform: rotate(4320deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.clockContainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+.clockFace {
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+
+  z-index: 0;
+}
+
+.hourHand {
+
+  /* animation: rotate 5s ease-out; */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+  
+  transition: 0.15s ease-out;
+}
+
+.minuteHand {
+
+  /* animation: rotateFaster 5s ease-out; */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 2;
+  /* background-color: red; */
+  
+  transition: 0.15s ease-out;
+}
+
+.clockText {
+  opacity: 0;
+  /* animation: fadeIn 1s ease-out 4s, rotateFaster 5s ease-out; */
+  animation-fill-mode: forwards;
+  
+  transition: 0.15s ease-out;
+}
+
+.clockContainer {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}

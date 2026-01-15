@@ -1,0 +1,94 @@
+.scrollContainer {
+    width: 100vw;
+    height: 200vh;
+    position: relative;
+}
+  
+.primalContainer {
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    position: fixed;
+}
+
+.quoteText {
+    color: #FFF;
+    text-align: justify;
+    font-family: Lexend;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 3px;
+    width: 100%;
+}
+
+.quoteContainer {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    display: flex;
+    flex-direction: row;
+
+    /* background-color: red; */
+
+    max-width: 500px;
+}
+
+.openQuote {
+    color: #D9D9D9;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 15px;
+
+    margin-top: -250px;
+}
+
+.closedQuote {
+    color: #D9D9D9;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 15px;
+
+    margin-bottom: -350px;
+}
+
+.aboveStarsContainer {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: red; */
+}
+
+.name {
+
+    margin-top: 100px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 7.5px;
+}

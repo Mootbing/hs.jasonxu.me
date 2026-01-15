@@ -1,0 +1,14 @@
+.scrollContainer {
+    width: 100vw;
+    height: 150vh;
+    position: relative;
+}
+  
+.primalContainer {
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    position: fixed;
+
+    z-index: 100;
+}
